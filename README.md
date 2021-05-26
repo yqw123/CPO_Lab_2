@@ -73,3 +73,6 @@
   Then, according to the results of the analysis, the stack is used to implement the regular expression operation. In the process of operation, the Thompson construction method is used to construct the NFA corresponding to the regular expression.
   Finally, using the NFA corresponding to the regular expression to carry out string matching, to achieve match, search, sub, split function.
   Regex_FA_Construction is an NFA constructor class repackaged on the basis of discrete_event model, which contains the operation of NFA nodes and matching results.
+  The regex_parser parses regular expressions, dividing them into operators and operands.
+  Regex_to_NFA uses the results of Regex_Parser parsed and the Regex_Fa_Construction NFA constructor class implementation to convert the regular expression to the corresponding NFA.
+  Regex_lib implements match, search, sub, and split functions using the corresponding NFA of regular expressions.
